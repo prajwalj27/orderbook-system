@@ -16,9 +16,9 @@ target/
 gateway/data/
 
 # ── Credentials ────────────────────────────────────────────────
-# consumer/application.properties contains PlanetScale credentials.
-# Keep the file tracked but never commit real credentials.
-# Use placeholder values (YOUR_PLANETSCALE_USERNAME etc.) in the repo.
+# application.properties may contain DB credentials — never commit real values.
+# Each service has an application.properties.example with placeholder values.
+*/src/main/resources/application.properties
 
 # ── Python tests ───────────────────────────────────────────────
 __pycache__/
