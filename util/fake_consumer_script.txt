@@ -1,12 +1,25 @@
 # from anywhere
 python - <<'EOF'
 import socket
+import os
+from datetime import datetime
+
+log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'util', 'logs')
+os.makedirs(log_dir, exist_ok=True)
+log_path = os.path.join(log_dir, 'trades_' + datetime.now().strftime('%Y%m%d_%H%M%S') + '.log')
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect(('localhost', 7002))
 print("Fake consumer connected on port 7002")
-while True:
-    data = s.recv(4096)
-    if not data:
-        break
-    print("[TRADE]", data.decode(), end='')
+print("Logging trades to:", log_path)
+
+with open(log_path, 'w') as f:
+    f.write("# Benchmark trade log — " + datetime.now().isoformat() + "\n")
+    while True:
+        data = s.recv(4096)
+        if not data:
+            break
+        lines = data.decode()
+        f.write(lines)
+        f.flush()
 EOF

@@ -43,18 +43,44 @@ static std::string formatTrade(const Trade& t) {
     return ss.str();
 }
 
+static std::string formatSnapshot(const BookSnapshot& snap) {
+    std::ostringstream ss;
+    ss << "BOOK";
+
+    ss << "|bids=";
+    for (size_t i = 0; i < snap.bids.size(); i++) {
+        if (i > 0) ss << ",";
+        ss << std::fixed << std::setprecision(2) << snap.bids[i].price
+           << "x" << snap.bids[i].quantity;
+    }
+
+    ss << "|asks=";
+    for (size_t i = 0; i < snap.asks.size(); i++) {
+        if (i > 0) ss << ",";
+        ss << std::fixed << std::setprecision(2) << snap.asks[i].price
+           << "x" << snap.asks[i].quantity;
+    }
+
+    return ss.str();
+}
+
 int main() {
     WSADATA wsa;
     WSAStartup(MAKEWORD(2, 2), &wsa);
 
-    SOCKET consumerSrv = bindAndListen(7002);
-    SOCKET gatewaySrv  = bindAndListen(7001);
+    SOCKET consumerSrv   = bindAndListen(7002);
+    SOCKET marketDataSrv = bindAndListen(7003);
+    SOCKET gatewaySrv    = bindAndListen(7001);
 
-    std::cout << "Orderbook Engine v1.0 - listening on 7001 (gateway) and 7002 (consumer)" << std::endl;
+    std::cout << "Orderbook Engine v1.0 - listening on 7001 (gateway), 7002 (consumer), 7003 (market-data)" << std::endl;
 
     std::cout << "Waiting for consumer on port 7002..." << std::endl;
     SOCKET consumerConn = accept(consumerSrv, nullptr, nullptr);
     std::cout << "Consumer connected." << std::endl;
+
+    std::cout << "Waiting for market-data service on port 7003..." << std::endl;
+    SOCKET marketDataConn = accept(marketDataSrv, nullptr, nullptr);
+    std::cout << "Market-data service connected." << std::endl;
 
     std::cout << "Waiting for gateway on port 7001..." << std::endl;
     SOCKET gatewayConn = accept(gatewaySrv, nullptr, nullptr);
@@ -99,13 +125,18 @@ int main() {
                     sendLine(consumerConn, formatTrade(trade));
                 }
             }
+
+            // broadcast book snapshot after every order
+            sendLine(marketDataConn, formatSnapshot(book.getSnapshot(5)));
         }
     }
 
     closesocket(gatewayConn);
     closesocket(consumerConn);
+    closesocket(marketDataConn);
     closesocket(gatewaySrv);
     closesocket(consumerSrv);
+    closesocket(marketDataSrv);
     WSACleanup();
 
     return 0;

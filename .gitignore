@@ -15,11 +15,14 @@ target/
 # WAL file — generated at runtime, not source code
 gateway/data/
 gateway/gateway/data/
+# Benchmark trade logs
+util/logs/
 
 # ── Credentials ────────────────────────────────────────────────
 # application.properties may contain DB credentials — never commit real values.
 # Each service has an application.properties.example with placeholder values.
 */src/main/resources/application.properties
+market-data/src/main/resources/application.properties
 
 # ── Python tests ───────────────────────────────────────────────
 __pycache__/

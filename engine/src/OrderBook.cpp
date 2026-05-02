@@ -24,3 +24,35 @@ std::map<double, std::deque<Order>>& OrderBook::getAsks() { return asks; }
 
 bool OrderBook::hasBids() const { return !bids.empty(); }
 bool OrderBook::hasAsks() const { return !asks.empty(); }
+
+BookSnapshot OrderBook::getSnapshot(int depth) const {
+    BookSnapshot snap;
+
+    // bids — iterate from highest price downward
+    auto bit = bids.rbegin();
+    while (bit != bids.rend() && (int)snap.bids.size() < depth) {
+        int totalQty = 0;
+        for (const auto& o : bit->second) {
+            if (o.status != OrderStatus::CANCELLED)
+                totalQty += (o.quantity - o.filledQty);
+        }
+        if (totalQty > 0)
+            snap.bids.push_back({bit->first, totalQty});
+        ++bit;
+    }
+
+    // asks — iterate from lowest price upward
+    auto ait = asks.begin();
+    while (ait != asks.end() && (int)snap.asks.size() < depth) {
+        int totalQty = 0;
+        for (const auto& o : ait->second) {
+            if (o.status != OrderStatus::CANCELLED)
+                totalQty += (o.quantity - o.filledQty);
+        }
+        if (totalQty > 0)
+            snap.asks.push_back({ait->first, totalQty});
+        ++ait;
+    }
+
+    return snap;
+}

@@ -15,3 +15,6 @@ add_executable(orderbook
 )
 
 target_link_libraries(orderbook ws2_32)
+
+add_executable(bench benchmark/bench.cpp)
+target_link_libraries(bench ws2_32)
