@@ -1,0 +1,7 @@
+server.port=8080
+wal.path=gateway/data/wal.log
+engine.host=localhost
+engine.port=7001
+risk.reference-price=150.00
+risk.price-collar-pct=10.0
+risk.max-quantity=10000
