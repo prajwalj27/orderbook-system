@@ -6,4 +6,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
-add_executable(orderbook src/main.cpp)
+add_executable(orderbook
+    src/main.cpp
+    src/OrderBook.cpp
+    src/MatchingEngine.cpp
+    src/Parser.cpp
+    src/EventLog.cpp
+)
+
+target_link_libraries(orderbook ws2_32)

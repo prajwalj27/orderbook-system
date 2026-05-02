@@ -86,19 +86,87 @@ CMakeFiles/orderbook.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook.dir/src/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\main.cpp -o CMakeFiles\orderbook.dir\src\main.cpp.s
 
+CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj: CMakeFiles/orderbook.dir/flags.make
+CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj: CMakeFiles/orderbook.dir/includes_CXX.rsp
+CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj: C:/Users/prajw/Work/my-projects/orderbook-system/engine/src/OrderBook.cpp
+CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj: CMakeFiles/orderbook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\prajw\Work\my-projects\orderbook-system\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj -MF CMakeFiles\orderbook.dir\src\OrderBook.cpp.obj.d -o CMakeFiles\orderbook.dir\src\OrderBook.cpp.obj -c C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\OrderBook.cpp
+
+CMakeFiles/orderbook.dir/src/OrderBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook.dir/src/OrderBook.cpp.i"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\OrderBook.cpp > CMakeFiles\orderbook.dir\src\OrderBook.cpp.i
+
+CMakeFiles/orderbook.dir/src/OrderBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook.dir/src/OrderBook.cpp.s"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\OrderBook.cpp -o CMakeFiles\orderbook.dir\src\OrderBook.cpp.s
+
+CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj: CMakeFiles/orderbook.dir/flags.make
+CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj: CMakeFiles/orderbook.dir/includes_CXX.rsp
+CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj: C:/Users/prajw/Work/my-projects/orderbook-system/engine/src/MatchingEngine.cpp
+CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj: CMakeFiles/orderbook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\prajw\Work\my-projects\orderbook-system\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj -MF CMakeFiles\orderbook.dir\src\MatchingEngine.cpp.obj.d -o CMakeFiles\orderbook.dir\src\MatchingEngine.cpp.obj -c C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\MatchingEngine.cpp
+
+CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.i"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\MatchingEngine.cpp > CMakeFiles\orderbook.dir\src\MatchingEngine.cpp.i
+
+CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.s"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\MatchingEngine.cpp -o CMakeFiles\orderbook.dir\src\MatchingEngine.cpp.s
+
+CMakeFiles/orderbook.dir/src/Parser.cpp.obj: CMakeFiles/orderbook.dir/flags.make
+CMakeFiles/orderbook.dir/src/Parser.cpp.obj: CMakeFiles/orderbook.dir/includes_CXX.rsp
+CMakeFiles/orderbook.dir/src/Parser.cpp.obj: C:/Users/prajw/Work/my-projects/orderbook-system/engine/src/Parser.cpp
+CMakeFiles/orderbook.dir/src/Parser.cpp.obj: CMakeFiles/orderbook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\prajw\Work\my-projects\orderbook-system\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/orderbook.dir/src/Parser.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/Parser.cpp.obj -MF CMakeFiles\orderbook.dir\src\Parser.cpp.obj.d -o CMakeFiles\orderbook.dir\src\Parser.cpp.obj -c C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\Parser.cpp
+
+CMakeFiles/orderbook.dir/src/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook.dir/src/Parser.cpp.i"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\Parser.cpp > CMakeFiles\orderbook.dir\src\Parser.cpp.i
+
+CMakeFiles/orderbook.dir/src/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook.dir/src/Parser.cpp.s"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\Parser.cpp -o CMakeFiles\orderbook.dir\src\Parser.cpp.s
+
+CMakeFiles/orderbook.dir/src/EventLog.cpp.obj: CMakeFiles/orderbook.dir/flags.make
+CMakeFiles/orderbook.dir/src/EventLog.cpp.obj: CMakeFiles/orderbook.dir/includes_CXX.rsp
+CMakeFiles/orderbook.dir/src/EventLog.cpp.obj: C:/Users/prajw/Work/my-projects/orderbook-system/engine/src/EventLog.cpp
+CMakeFiles/orderbook.dir/src/EventLog.cpp.obj: CMakeFiles/orderbook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\prajw\Work\my-projects\orderbook-system\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/orderbook.dir/src/EventLog.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/EventLog.cpp.obj -MF CMakeFiles\orderbook.dir\src\EventLog.cpp.obj.d -o CMakeFiles\orderbook.dir\src\EventLog.cpp.obj -c C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\EventLog.cpp
+
+CMakeFiles/orderbook.dir/src/EventLog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook.dir/src/EventLog.cpp.i"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\EventLog.cpp > CMakeFiles\orderbook.dir\src\EventLog.cpp.i
+
+CMakeFiles/orderbook.dir/src/EventLog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook.dir/src/EventLog.cpp.s"
+	C:\PROGRA~1\MINGW-~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\prajw\Work\my-projects\orderbook-system\engine\src\EventLog.cpp -o CMakeFiles\orderbook.dir\src\EventLog.cpp.s
+
 # Object files for target orderbook
 orderbook_OBJECTS = \
-"CMakeFiles/orderbook.dir/src/main.cpp.obj"
+"CMakeFiles/orderbook.dir/src/main.cpp.obj" \
+"CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj" \
+"CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj" \
+"CMakeFiles/orderbook.dir/src/Parser.cpp.obj" \
+"CMakeFiles/orderbook.dir/src/EventLog.cpp.obj"
 
 # External object files for target orderbook
 orderbook_EXTERNAL_OBJECTS =
 
 orderbook.exe: CMakeFiles/orderbook.dir/src/main.cpp.obj
+orderbook.exe: CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj
+orderbook.exe: CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj
+orderbook.exe: CMakeFiles/orderbook.dir/src/Parser.cpp.obj
+orderbook.exe: CMakeFiles/orderbook.dir/src/EventLog.cpp.obj
 orderbook.exe: CMakeFiles/orderbook.dir/build.make
 orderbook.exe: CMakeFiles/orderbook.dir/linkLibs.rsp
 orderbook.exe: CMakeFiles/orderbook.dir/objects1.rsp
 orderbook.exe: CMakeFiles/orderbook.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\prajw\Work\my-projects\orderbook-system\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable orderbook.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\prajw\Work\my-projects\orderbook-system\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable orderbook.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\orderbook.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

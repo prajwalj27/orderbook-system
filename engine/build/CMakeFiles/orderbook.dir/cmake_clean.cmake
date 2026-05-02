@@ -1,4 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/orderbook.dir/src/EventLog.cpp.obj"
+  "CMakeFiles/orderbook.dir/src/EventLog.cpp.obj.d"
+  "CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj"
+  "CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj.d"
+  "CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj"
+  "CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj.d"
+  "CMakeFiles/orderbook.dir/src/Parser.cpp.obj"
+  "CMakeFiles/orderbook.dir/src/Parser.cpp.obj.d"
   "CMakeFiles/orderbook.dir/src/main.cpp.obj"
   "CMakeFiles/orderbook.dir/src/main.cpp.obj.d"
   "liborderbook.dll.a"

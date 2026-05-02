@@ -128,6 +128,102 @@ orderbook/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/build
 .PHONY : orderbook/fast
 
+src/EventLog.obj: src/EventLog.cpp.obj
+.PHONY : src/EventLog.obj
+
+# target to build an object file
+src/EventLog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/EventLog.cpp.obj
+.PHONY : src/EventLog.cpp.obj
+
+src/EventLog.i: src/EventLog.cpp.i
+.PHONY : src/EventLog.i
+
+# target to preprocess a source file
+src/EventLog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/EventLog.cpp.i
+.PHONY : src/EventLog.cpp.i
+
+src/EventLog.s: src/EventLog.cpp.s
+.PHONY : src/EventLog.s
+
+# target to generate assembly for a file
+src/EventLog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/EventLog.cpp.s
+.PHONY : src/EventLog.cpp.s
+
+src/MatchingEngine.obj: src/MatchingEngine.cpp.obj
+.PHONY : src/MatchingEngine.obj
+
+# target to build an object file
+src/MatchingEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.obj
+.PHONY : src/MatchingEngine.cpp.obj
+
+src/MatchingEngine.i: src/MatchingEngine.cpp.i
+.PHONY : src/MatchingEngine.i
+
+# target to preprocess a source file
+src/MatchingEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.i
+.PHONY : src/MatchingEngine.cpp.i
+
+src/MatchingEngine.s: src/MatchingEngine.cpp.s
+.PHONY : src/MatchingEngine.s
+
+# target to generate assembly for a file
+src/MatchingEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/MatchingEngine.cpp.s
+.PHONY : src/MatchingEngine.cpp.s
+
+src/OrderBook.obj: src/OrderBook.cpp.obj
+.PHONY : src/OrderBook.obj
+
+# target to build an object file
+src/OrderBook.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/OrderBook.cpp.obj
+.PHONY : src/OrderBook.cpp.obj
+
+src/OrderBook.i: src/OrderBook.cpp.i
+.PHONY : src/OrderBook.i
+
+# target to preprocess a source file
+src/OrderBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/OrderBook.cpp.i
+.PHONY : src/OrderBook.cpp.i
+
+src/OrderBook.s: src/OrderBook.cpp.s
+.PHONY : src/OrderBook.s
+
+# target to generate assembly for a file
+src/OrderBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/OrderBook.cpp.s
+.PHONY : src/OrderBook.cpp.s
+
+src/Parser.obj: src/Parser.cpp.obj
+.PHONY : src/Parser.obj
+
+# target to build an object file
+src/Parser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/Parser.cpp.obj
+.PHONY : src/Parser.cpp.obj
+
+src/Parser.i: src/Parser.cpp.i
+.PHONY : src/Parser.i
+
+# target to preprocess a source file
+src/Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/Parser.cpp.i
+.PHONY : src/Parser.cpp.i
+
+src/Parser.s: src/Parser.cpp.s
+.PHONY : src/Parser.s
+
+# target to generate assembly for a file
+src/Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\orderbook.dir\build.make CMakeFiles/orderbook.dir/src/Parser.cpp.s
+.PHONY : src/Parser.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -161,6 +257,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... orderbook
+	@echo ... src/EventLog.obj
+	@echo ... src/EventLog.i
+	@echo ... src/EventLog.s
+	@echo ... src/MatchingEngine.obj
+	@echo ... src/MatchingEngine.i
+	@echo ... src/MatchingEngine.s
+	@echo ... src/OrderBook.obj
+	@echo ... src/OrderBook.i
+	@echo ... src/OrderBook.s
+	@echo ... src/Parser.obj
+	@echo ... src/Parser.i
+	@echo ... src/Parser.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
