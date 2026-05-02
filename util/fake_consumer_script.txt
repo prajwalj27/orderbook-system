@@ -1,0 +1,12 @@
+# from anywhere
+python - <<'EOF'
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect(('localhost', 7002))
+print("Fake consumer connected on port 7002")
+while True:
+    data = s.recv(4096)
+    if not data:
+        break
+    print("[TRADE]", data.decode(), end='')
+EOF
